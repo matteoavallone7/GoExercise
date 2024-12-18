@@ -1,0 +1,18 @@
+# 1) Create Go module
+$ go mod init GoExercise
+$ go mod tidy
+
+# 2) Run each mapper from different terminal using json file port numbers
+$ go run src/mapper.go 1234
+$ go run src/mapper.go 1235
+$ go run src/mapper.go 1236
+$ go run src/mapper.go 1237
+
+# 3) Run each reducer from different terminal using json file port numbers
+$ go run src/reducer.go 1238
+$ go run src/reducer.go 1239
+$ go run src/reducer.go 1240
+
+# 4) Run master
+$ go run src/master.go
+
